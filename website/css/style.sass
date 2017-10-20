@@ -1,0 +1,75 @@
+@import 'myreset'
+@import 'cards.sass'
+
+$fontSize: 14px
+
+body 
+    font-family: 'Roboto Slab', serif 
+    font-size: $fontSize
+    font-weight: 300 
+    background: rgba(0,0,0,0.1)
+
+a 
+    color: black
+    text-decoration: none
+    border-bottom: 1px dashed rgba(0,0,0,0.3)
+
+p
+    &:not(:last-child)
+        margin-bottom: $fontSize
+
+.center
+    text-align: center
+
+.left 
+    background: white 
+    position: fixed 
+    top: 0
+    bottom: 0
+    width: 50%
+
+    .logo 
+        position: absolute 
+        top: 0
+        left: 0
+        padding: $fontSize*2
+        a 
+            display: inline-block 
+            width: 64px 
+            height: 64px
+            border: none
+            img 
+                max-width: 100%
+
+    .download 
+        position: absolute 
+        top: 0
+        right: 0
+        padding: $fontSize*2
+
+    .cardLinks
+        position: absolute 
+        bottom: 0
+        left: 0
+        padding: $fontSize*2
+        a 
+            display: inline-block 
+            padding: $fontSize
+            width: 72px
+            height: 72px
+            border: none
+            img 
+                max-width: 100%
+
+.right
+    width: 50%
+    float: right
+    // padding: 10vw
+    
+    .container 
+        margin-bottom: 100vh
+        padding: 5vw 10vw
+    .card 
+        margin-bottom: 5vh
+        pre
+            font-size: 10px

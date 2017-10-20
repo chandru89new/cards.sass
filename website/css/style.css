@@ -1,0 +1,306 @@
+/* 
+  Modified from Eric's CSS Reset v2.0:
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+
+*/
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+progress {
+  vertical-align: baseline; }
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+a:active,
+a:hover {
+  outline-width: 0; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */ }
+
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* box sizing */
+* {
+  box-sizing: border-box; }
+
+/* touch highlight */
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+/* normalizing h styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+/* links */
+a {
+  text-decoration: none; }
+
+/* remove focus outline on form elems */
+input:focus, button:focus, textarea:focus {
+  outline: none; }
+
+/* this one forces body font-family on all form elements */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit; }
+
+/* clearfix */
+.clr:after, .clear:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-size: 14px; }
+  .card .card-text {
+    line-height: 1.7em; }
+  .card .card-title {
+    font-size: 21px;
+    line-height: 1.5em; }
+    .card .card-title:not(:last-child) {
+      margin-bottom: 14px; }
+    .card .card-title .card-subtitle {
+      font-size: 75%;
+      opacity: 0.8; }
+  .card.bg {
+    background: #454837;
+    color: white; }
+  .card.simple.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-bewteen; }
+    .card.simple.icon .card-icon {
+      flex: 1;
+      text-align: center;
+      margin-right: 14px; }
+      .card.simple.icon .card-icon img {
+        max-width: 100%; }
+    .card.simple.icon .card-text {
+      flex: 7;
+      margin-left: 14px; }
+  .card.simple.image {
+    padding: 0;
+    position: relative; }
+    .card.simple.image .card-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 30%; }
+      .card.simple.image .card-image img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .card.simple.image .card-text {
+      padding: 28px;
+      margin-left: 30%; }
+    .card.simple.image.reverse .card-image {
+      left: initial;
+      right: 0; }
+    .card.simple.image.reverse .card-text {
+      left: 0;
+      right: initial;
+      margin-right: 30%;
+      margin-left: initial; }
+  .card.title.icon .card-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 14px; }
+  .card.title.title-bg {
+    padding: 0; }
+    .card.title.title-bg .card-title {
+      background: #454837;
+      padding: 28px;
+      color: white;
+      margin-bottom: 0; }
+    .card.title.title-bg .card-text {
+      padding: 28px; }
+    .card.title.title-bg.small-pad .card-title, .card.title.title-bg.small-pad .card-text {
+      padding: 14px; }
+  .card.img {
+    padding: 0; }
+    .card.img .card-image {
+      position: relative;
+      height: 150px; }
+      .card.img .card-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .card.img .card-title {
+      font-weight: bold;
+      padding: 28px;
+      text-align: center;
+      margin-bottom: 0;
+      color: white;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .card.img .card-text {
+      padding: 28px; }
+  .card.profile {
+    text-align: center; }
+    .card.profile .card-image {
+      margin-bottom: 14px; }
+      .card.profile .card-image img {
+        width: 128px;
+        height: 128px;
+        border-radius: 100%; }
+        .card.profile .card-image img.small {
+          width: 96px;
+          height: 96px; }
+    .card.profile.alternate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left; }
+      .card.profile.alternate .card-image {
+        text-align: center;
+        flex: 2;
+        margin: 0; }
+      .card.profile.alternate .text {
+        padding-left: 28px;
+        flex: 8; }
+  .card.small-pad {
+    padding: 14px; }
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.1); }
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3); }
+
+p:not(:last-child) {
+  margin-bottom: 14px; }
+
+.center {
+  text-align: center; }
+
+.left {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%; }
+  .left .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px; }
+    .left .logo a {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      border: none; }
+      .left .logo a img {
+        max-width: 100%; }
+  .left .download {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 28px; }
+  .left .cardLinks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 28px; }
+    .left .cardLinks a {
+      display: inline-block;
+      padding: 14px;
+      width: 72px;
+      height: 72px;
+      border: none; }
+      .left .cardLinks a img {
+        max-width: 100%; }
+
+.right {
+  width: 50%;
+  float: right; }
+  .right .container {
+    margin-bottom: 100vh;
+    padding: 5vw 10vw; }
+  .right .card {
+    margin-bottom: 5vh; }
+    .right .card pre {
+      font-size: 10px; }
+
+/*# sourceMappingURL=style.css.map */

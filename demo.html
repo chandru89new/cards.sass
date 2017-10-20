@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang='en-us'>
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href='cards.css' rel='stylesheet' />
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .container {
+            width: 80%;
+            max-width: 500px;
+            margin: 128px auto;
+        }
+        code {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <code>.card.simple.*</code>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-text">
+                This is a simple card with just a line or two of text.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card simple icon">
+            <div class="card-icon">
+                <img src="icon.png" alt="">
+            </div>
+            <div class="card-text">
+                This is a simple card with a line or two of text but with a font icon on the left. Or an image but that's usually square or circular and is not edge-to-edge.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card simple image">
+            <div class="card-image">
+                <img src="image.jpg" alt="">
+            </div>
+            <div class="card-text">
+                This is a simple card with a line or two of text but with an image on the left. The image attaches itself to the borders of the card.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card simple image reverse">
+            <div class="card-text">
+                Same thing as above. But reverse order.
+            </div>
+            <div class="card-image">
+                <img src="image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card simple bg">
+            <div class="card-text">
+                Dark card, light text.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <code>.card.title.*</code>
+    </div>
+
+    <div class="container">
+        <div class="card title">
+            <div class="card-title">
+                Title of the card
+            </div>
+            <div class="card-text">
+                Now we're introducing a title for the card. The font-size and margin can be controlled by modifying the values for <code>.card-title</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card title icon">
+            <div class="card-title">
+                <i class="zmdi zmdi-flower-alt zmdi-hc"></i> &nbsp; Title of the card with an icon
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur saepe eius alias inventore itaque, repellat enim, accusamus. Eligendi, facilis assumenda! Doloremque nostrum maiores corporis error, minus voluptas iusto illo ullam!
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card title icon bg">
+            <div class="card-title">
+                <i class="zmdi zmdi-flower-alt zmdi-hc"></i> &nbsp; Title of the card with an icon
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur saepe eius alias inventore itaque, repellat enim, accusamus. Eligendi, facilis assumenda! Doloremque nostrum maiores corporis error, minus voluptas iusto illo ullam!
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card title title-bg small-pad">
+            <div class="card-title">
+                <i class="zmdi zmdi-flower-alt zmdi-hc"></i> Title of this card
+            </div>
+            <div class="card-text">
+                This is a card with a title in dark BG. Also, note that the padding and margins are smaller than the usual. This is <code>.card.title.title-bg.small-pad</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card title title-bg">
+            <div class="card-title">
+                <i class="zmdi zmdi-flower-alt zmdi-hc"></i> &nbsp; Title of this card
+            </div>
+            <div class="card-text">
+                Same as above this time around, we're using the regular margins/padding sizes. This one is <code>.card.title.title-bg</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card title">
+            <div class="card-title">
+                Title of the card
+                <div class="card-subtitle">
+                    A smaller subheading
+                </div>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius doloribus natus officia nihil. Repellendus unde voluptate assumenda minima nemo sed inventore, quibusdam numquam ut temporibus non quod autem odio.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <code>.card.img.*</code>
+    </div>
+
+    <div class="container">
+        <div class="card img">
+            <div class="card-image">
+                <img src="image.jpg" alt="">
+            </div>
+            <div class="card-text">
+                A card with an image as header. Useful when you want to have some illustration up there.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card img">
+            <div class="card-title" style="background-image: url(image.jpg)">
+                This is the title of the card
+            </div>
+            <div class="card-text">
+                A card with an image as header. Useful when you want to have some illustration up there.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card profile">
+            <div class="card-image">
+                <img src="dp.jpg" alt="">
+            </div>
+            <div class="card-title">
+                Jane Doe
+            </div>
+            <div class="card-text">
+                Sort of a profile card. <br>Everything is center-aligned in this version.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card profile alternate">
+            <div class="card-image">
+                <img src="dp.jpg" alt="" class="small">
+            </div>
+            <div class="text">
+                <div class="card-title">
+                    Jane Doe
+                </div>
+                <div class="card-text">
+                    Sort of a profile card. <br>Everything is center-aligned in this version.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

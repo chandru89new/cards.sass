@@ -1,0 +1,135 @@
+/* 
+  Modified from Eric's CSS Reset v2.0:
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+
+*/
+
+* {box-sizing: border-box;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+/* touch highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* normalizing h styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+/* remove focus outline on form elems */
+input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+/* this one forces body font-family on all form elements */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* clearfix */
+.clr:after, .clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
