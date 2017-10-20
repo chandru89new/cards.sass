@@ -303,4 +303,23 @@ p:not(:last-child) {
     .right .card pre {
       font-size: 10px; }
 
+@media all and (max-width: 767px) and (orientation: portrait) {
+  .left, .right {
+    display: none; }
+
+  .mobile {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    padding: 14px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em; } }
+@media all and (min-width: 1600px) {
+  .left .logo, .left .download, .left .cardLinks {
+    padding: 140px; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -73,3 +73,32 @@ p
         margin-bottom: 5vh
         pre
             font-size: 10px
+
+
+=m
+    @media all and (max-width: 767px) and (orientation: portrait) 
+        @content
+
+=hd
+    @media all and (min-width: 1600px)
+        @content
+
++m 
+    .left, .right 
+        display: none
+    .mobile 
+        height: 100vh
+        width: 100vw
+        overflow: hidden 
+        display: flex 
+        padding: $fontSize 
+        font-size: $fontSize 
+        align-items: center 
+        justify-content: center
+        text-align: center
+        line-height: 1.5em
+
++hd 
+    .left 
+        .logo, .download, .cardLinks
+            padding: $fontSize*10
