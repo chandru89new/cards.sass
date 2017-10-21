@@ -105,13 +105,23 @@
       align-items: center;
       justify-content: space-between;
       text-align: left; }
+      @media all and (min-width: 240px) and (max-width: 767px) {
+        .card.profile.alternate {
+          text-align: center;
+          display: block; } }
       .card.profile.alternate .card-image {
         text-align: center;
         flex: 1;
         margin: 0; }
+        @media all and (min-width: 240px) and (max-width: 767px) {
+          .card.profile.alternate .card-image {
+            margin-bottom: 18px; } }
       .card.profile.alternate .text {
         padding-left: 36px;
         flex: 8; }
+        @media all and (min-width: 240px) and (max-width: 767px) {
+          .card.profile.alternate .text {
+            padding-left: 0; } }
   .card.small-pad {
     padding: 18px; }
 

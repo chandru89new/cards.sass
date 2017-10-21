@@ -1,3 +1,5 @@
+// variables
+
 $cardBGDefault: #fff
 $cardRadius: 4px
 $cardFontSize: 14px
@@ -7,6 +9,14 @@ $margin: $cardFontSize
 $darkBG: #454837
 $titleBorderColor: rgba(0,0,0,0.1)
 $imgHeight: 150px
+
+// media query mixins
+=m 
+    @media all and (min-width: 240px) and (max-width: 767px)
+        @content 
+
+
+// card styles
 
 .card 
     background: $cardBGDefault
@@ -131,13 +141,20 @@ $imgHeight: 150px
             align-items: center 
             justify-content: space-between
             text-align: left
+            +m 
+                text-align: center 
+                display: block 
             .card-image
                 text-align: center
-                flex: 2
+                flex: 1
                 margin: 0
+                +m 
+                    margin-bottom: $margin
             .text 
                 padding-left: $cardPadding
                 flex: 8
+                +m 
+                    padding-left: 0
 
     &.small-pad
         padding: $cardPadding*0.5
