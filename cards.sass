@@ -67,6 +67,8 @@ $imgHeight: 150px
                 bottom: 0
                 left: 0
                 width: 30%
+                @media (max-width: 576px)
+                    width: 40%
                 img 
                     max-width: 100%
                     height: 100%
@@ -74,6 +76,8 @@ $imgHeight: 150px
             .card-text
                 padding: $cardPadding
                 margin-left: 30%
+                @media (max-width: 576px)
+                    margin-left: 40%
             &.reverse
                 .card-image
                     left: initial
@@ -83,6 +87,8 @@ $imgHeight: 150px
                     right: initial
                     margin-right: 30%
                     margin-left: initial
+                    @media (max-width: 576px)
+                        margin-right: 40%
         
     &.title
         &.icon
