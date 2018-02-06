@@ -3,12 +3,15 @@
 $cardBGDefault: #fff
 $cardRadius: 4px
 $cardFontSize: 18px
+$cardTextLineHeight: 1.7em
 $cardTitleFontSize: $cardFontSize*1.5
+$cardTitleLineHeight: 1.7em
 $cardPadding: $cardFontSize*2
 $margin: $cardFontSize
 $darkBG: #454837
 $titleBorderColor: rgba(0,0,0,0.1)
 $imgHeight: 150px
+$boxShadow: 1px 1px 2px 0 rgba(0,0,0,0.1)
 
 // media query mixins
 =m 
@@ -27,13 +30,13 @@ $imgHeight: 150px
     font-size: $cardFontSize
     
     .card-text
-        line-height: 1.7em
+        line-height: $cardTextLineHeight
 
     .card-title
         &:not(:last-child)
             margin-bottom: $margin 
         font-size: $cardTitleFontSize
-        line-height: 1.5em
+        line-height: $cardTitleLineHeight
         .card-subtitle
             font-size: 75%
             opacity: 0.8
