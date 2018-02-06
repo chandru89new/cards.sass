@@ -6,6 +6,13 @@ Easy-to-use card UI for your app / project / website design.
 
 [Here are some examples](http://druchan.com/cards.sass).
 
+#### Updates
+
+*6th Feb 2018:*  
+Added two more variables:
+- `$boxShadow` to control the box shadow of cards
+- `$cardTitleLineHeight` and `$cardTextLineHeight` to control the line-height of title and text in cards more easily
+
 #### How to use this?
 
 1. Import `cards.css` or `cards.sass` (if you use a build environment that compiles sass) into your project.
